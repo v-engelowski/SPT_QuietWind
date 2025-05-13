@@ -1,11 +1,11 @@
 ﻿using Audio.AmbientSubsystem;
 using BepInEx;
 using BepInEx.Configuration;
-using SPT_QuietWeather.Patch;
+using SPT_QuietWind.Patch;
 using System;
 
 
-namespace SPT_QuietWeather
+namespace SPT_QuietWind
 {
     [BepInPlugin(PluginInfo.GUID, PluginInfo.NAME, PluginInfo.VERSION)]
     public class QuietWeather : BaseUnityPlugin

@@ -4,7 +4,7 @@ using Audio.AmbientSubsystem;
 using UnityEngine;
 
 
-namespace SPT_QuietWeather.Patch
+namespace SPT_QuietWind.Patch
 {
     public class WindAmbientBlenderPatch : ModulePatch
     {
