@@ -1,16 +1,15 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SPT_QuietWeather")]
+[assembly: AssemblyTitle("SPT_SPT_QuietWind")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Privat")]
-[assembly: AssemblyProduct("SPT_QuietWeather")]
-[assembly: AssemblyCopyright("Copyright © Privat 2025")]
+[assembly: AssemblyCompany("MakerMacher")]
+[assembly: AssemblyProduct("SPT_SPT_QuietWind")]
+[assembly: AssemblyCopyright("Copyright © MakerMacher 2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
