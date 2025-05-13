@@ -13,9 +13,12 @@ namespace SPT_QuietWeather.Patch
         [PatchPrefix]
         static bool Prefix(WindAmbientBlender __instance, ref float __result)
         {
+            float windVolumenMult = QuietWeather.WindVolumeMultiplier.Value;
             float clamped = Mathf.Clamp(__instance.method_9(), 0.2f, 1f);
-            __result = clamped * QuietWeather.WindVolumeMultiplier.Value;
 
+            if (windVolumenMult != 1f) Logger.LogInfo($"[{PluginInfo.GUID} v{PluginInfo.VERSION}] Wind volume multiplied by {windVolumenMult}");
+
+            __result = clamped * windVolumenMult;
             return false; // skip original method
         }
     }

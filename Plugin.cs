@@ -14,26 +14,10 @@ namespace SPT_QuietWeather
 
         private void Awake()
         {
-            WindVolumeMultiplier = Config.Bind("Audio", "Wind volume multiplier", 1.0f, new ConfigDescription("Scales wind ambient volume.", new AcceptableValueRange<float>(0f, 2f)));
-            WindVolumeMultiplier.SettingChanged += OnWindVolumeChanged;
+            WindVolumeMultiplier = Config.Bind("Audio", "Wind volume multiplier", 1.0f, new ConfigDescription("Scales wind ambient volume. Applies when wind condition changes.", new AcceptableValueRange<float>(0f, 2f)));
 
             new WindAmbientBlenderPatch().Enable();
             Logger.LogInfo($"[{PluginInfo.GUID} v{PluginInfo.VERSION}] Loaded plugin!");
-        }
-
-        private void OnWindVolumeChanged(object sender, EventArgs e)
-        {
-            var blender = FindObjectOfType<WindAmbientBlender>();
-
-            if (blender != null)
-            {
-                blender.method_3();
-                Logger.LogInfo($"[{PluginInfo.GUID} v{PluginInfo.VERSION}] Wind volume set!");
-            }
-            else
-            {
-                Logger.LogInfo($"[{PluginInfo.GUID} v{PluginInfo.VERSION}] Wind volume not set, no WindAmbientBlender (are you in a raid?)");
-            }
         }
     }
 }
