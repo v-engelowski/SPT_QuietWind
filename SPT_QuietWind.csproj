@@ -68,6 +68,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>pwsh.exe -Command "cp '$(TargetPath)' 'D:\Games\SPT 3.11\BepInEx\plugins'"</PostBuildEvent>
+    <PostBuildEvent>pwsh.exe -Command "$dir = 'C:\Users\maker\Documents\Repos\SPT_QuietWeather\dist\BepInEx\plugins\MakerMacher-QuietWind'; mkdir -p $dir; cp '$(TargetPath)' $dir"</PostBuildEvent>
   </PropertyGroup>
 </Project>
