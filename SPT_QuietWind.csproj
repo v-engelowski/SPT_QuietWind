@@ -51,11 +51,13 @@
     <Reference Include="UnityEngine">
       <HintPath>D:\Games\SPT 3.11\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>D:\Games\SPT 3.11\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Patch\PrecipitationAmbientBlenderPatch.cs" />
     <Compile Include="Patch\WindAmbientBlenderPatch.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="PluginInfo.cs" />

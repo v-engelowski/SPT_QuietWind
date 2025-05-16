@@ -16,7 +16,7 @@ namespace SPT_QuietWind.Patch
             float windVolumenMult = SPT_QuietWind.WindVolumeMultiplier.Value;
             float clamped = Mathf.Clamp(__instance.method_9(), 0.2f, 1f);
 
-            if (windVolumenMult != 1f) Logger.LogInfo($"[{PluginInfo.GUID} v{PluginInfo.VERSION}] Wind volume multiplied by {windVolumenMult}");
+            Logger.LogInfo($"[{PluginInfo.GUID} v{PluginInfo.VERSION}] Wind volume multiplied by {windVolumenMult}");
 
             __result = clamped * windVolumenMult;
             return false; // skip original method
