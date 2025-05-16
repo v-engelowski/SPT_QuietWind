@@ -10,6 +10,6 @@ namespace SPT_QuietWind
     {
         public const String GUID = "com.makermacher.quietwind";
         public const String NAME = "QuietWind";
-        public const String VERSION = "1.0.0";
+        public const String VERSION = "1.1.0";
     }
 }
